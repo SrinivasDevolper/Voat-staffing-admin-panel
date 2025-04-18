@@ -9,6 +9,11 @@ function AdminNavbar() {
       icon: "https://static.thenounproject.com/png/423483-200.png",
     },
     {
+      label: "All Applications",
+      to: "/all-applications",
+      icon: "https://cdn-icons-png.flaticon.com/512/103/103091.png",
+    },
+    {
       label: "Add HR",
       to: "/add-hr",
       icon: "https://cdn-icons-png.flaticon.com/512/2303/2303871.png",
@@ -19,30 +24,31 @@ function AdminNavbar() {
       icon: "https://img.freepik.com/premium-vector/businessman-briefcase-icon-outline_1076610-39618.jpg",
     },
     {
-      label: "Doctors List",
+      label: "HR List",
       to: "/all-hr",
       icon: "https://static.thenounproject.com/png/199571-200.png",
     },
     {
       label: "Users List",
       to: "/all-users",
-      icon: "https://media.istockphoto.com/id/1682903427/vector/coding-team-icon.jpg?s=612x612&w=0&k=20&c=nZ2IlFTKHrlFGjnLvaE29-BaLg2Q1CMzGsOo_8nGPY0=",
+      icon: "https://www.iconpacks.net/icons/1/free-users-icon-267-thumb.png",
     },
   ];
 
   return (
-    <div className="h-screen w-full md:w-72 bg-white border-r border-gray-200 shadow-sm">
-      <ul className="mt-4 space-y-2">
+    <div className="min-h-screen w-16 md:w-72 bg-white border-r border-gray-200 shadow-sm flex flex-col transition-all duration-300">
+      <ul className="mt-4 space-y-2 flex-1">
         {navItems.map(({ label, to, icon }) => (
           <NavLink
             to={to}
             key={label}
             className={({ isActive }) =>
-              `flex items-center gap-4 py-3 px-6 rounded-l-full transition-all duration-200 ${
-                isActive
-                  ? "bg-[#f2fcfc] border-r-4 border-[#5A5AFD] text-[#2E3A59] font-medium"
-                  : "text-[#515151] hover:bg-gray-50"
-              }`
+              `flex items-center md:items-start gap-4 px-4 py-2 rounded-l-full transition-all duration-200
+          ${
+            isActive
+              ? "bg-[#f2fcfc] border-r-4 border-[#5A5AFD] text-[#2E3A59] font-medium"
+              : "text-[#515151] hover:bg-gray-50"
+          }`
             }
           >
             <img src={icon} alt={`${label}-icon`} className="h-6 w-6" />
