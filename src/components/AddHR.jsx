@@ -134,7 +134,7 @@ function AddHR() {
               </div>
               <button
                 type="submit"
-                className="bg-primary px-10 py-3 mt-4 text-white rounded-full"
+                className="bg-[#2b7fff] px-10 py-3 mt-4 text-white rounded-full cursor-pointer hover:bg-[#1164e0] transition duration-300"
               >
                 Add HR
               </button>
