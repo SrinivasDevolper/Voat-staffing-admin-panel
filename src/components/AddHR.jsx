@@ -7,10 +7,10 @@ function AddHR() {
       <Navbar />
       <div className="flex items-start">
         <AdminNavbar />
-        <div className="p-5 w-full ml-5 mt-3">
+        <div className="p-2 md:p-5 w-full sm:ml-2 mt-2">
           <form className="md-3 w-full">
             <p className="mb-3 text-lg font-medium">Add HR Details</p>
-            <div className="bg-white px-8 py-8 border w-full max-w-4xl max-h-[80vh] overflow-y-scroll">
+            <div className="bg-white px-3 md:px-8 py-8 border w-full max-w-4xl max-h-[80vh] overflow-y-scroll">
               <div className="flex items-center gap-4 mb-8 text-gray-500">
                 <label htmlFor="doc-image">
                   <img
@@ -27,7 +27,7 @@ function AddHR() {
               /> */}
                 <p>picture</p>
               </div>
-              <div className="flex flex-col lg:flex-row items-start gap-10 text-gray-600">
+              <div className="flex flex-col lg:flex-row items-start md:gap-10 text-gray-600">
                 <div className="w-full lg:flex-1 flex flex-col gap-4">
                   <div className="flex-1 flex flex-col gap-1">
                     <p>HR NAME</p>
